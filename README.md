@@ -1,5 +1,3 @@
-<img width="1089" height="921" alt="abb3d0e0-e746-4084-bb9a-4623dc7212cf" src="https://github.com/user-attachments/assets/a98a8b6c-f1ea-4f47-ae87-39c22fd67b86" /># AuditJudgLLM: A Domain-Specific Large Language Model and Benchmark for Evaluating Audit Judgment
-
 ## Project Introduction
 
 This project focuses on data distillation and Large Language Model (LLM) fine-tuning in the audit domain. It generates high-quality reasoning data and performs fine-tuning using a Teacher-Student model framework, followed by systematic evaluation and testing of the model.
