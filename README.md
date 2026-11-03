@@ -1,14 +1,28 @@
 ## Project Introduction
 
-This project focuses on data distillation and Large Language Model (LLM) fine-tuning in the audit domain. It generates high-quality reasoning data and performs fine-tuning using a Teacher-Student model framework, followed by systematic evaluation and testing of the model.
+This project focuses on **Audit Judgment**, investigating the application of Large Language Models (LLMs) to audit finding problem judgment and regulatory basis identification. It develops a domain-specific large language model and an accompanying benchmark specifically designed for audit judgment tasks, namely **AuditJudgLLM**.
 
-**Project Type:** Audit-specific data distillation and LLM fine-tuning.
+To address the limitations of general-purpose LLMs in the auditing domain, including insufficient domain-specific knowledge, limited regulatory understanding, and inadequate complex reasoning capabilities, this project proposes a model development framework that integrates domain knowledge with instruction tuning. By systematically decomposing audit judgment tasks, we construct a domain-specific instruction dataset covering multiple subtasks. Both standard instruction data and Chain-of-Thought (CoT) reasoning data are incorporated into a Teacher–Student framework for data distillation and model fine-tuning, aiming to improve the accuracy, domain expertise, and reasoning capabilities of LLMs in audit judgment tasks.
 
-**Main Features:**
-- Dataset generation scripts.
-- Answer extraction after the reasoning process.
-- Multi-task evaluation scripts (Generative, Classification, Extraction).
-- Data quality evaluation based on ROUGE-L.
+Furthermore, we establish a dedicated benchmark for evaluating audit judgment capabilities. The benchmark systematically evaluates models with different parameter scales and underlying architectures across multiple dimensions, including generative question answering, text classification, and information extraction, thereby validating the effectiveness of domain knowledge integration and instruction-tuning strategies.
+
+**Project Type:**
+
+Domain-specific LLM development, instruction dataset construction, knowledge distillation, and model evaluation for audit judgment.
+
+**Main Features and Research Components:**
+
+1. **Audit Judgment Task Decomposition:** Systematically decomposes complex audit judgment tasks into multiple subtasks with clearly defined objectives, input-output specifications, and task requirements, establishing a structured task framework.
+
+2. **Domain-Specific Instruction Dataset Construction:** Develops an audit-domain instruction dataset containing approximately 27K instruction samples across 12 subtasks, incorporating both standard instruction data and CoT reasoning instruction data.
+
+3. **Reasoning Data Distillation:** Generates structured reasoning data based on a Teacher–Student framework, with data quality evaluated and filtered using answer extraction and metrics such as ROUGE-L.
+
+4. **Domain-Specific Model Fine-Tuning:** Conducts domain-specific instruction tuning based on foundation models such as Qwen2.5 and DeepSeek-R1-Distill-Qwen, developing specialized audit judgment models at different parameter scales.
+
+5. **Multi-Task Evaluation Benchmark:** Establishes evaluation tasks covering generative question answering, text classification, and information extraction to systematically assess models' domain knowledge, judgment capabilities, and reasoning performance.
+
+6. **Model Performance Comparison and Validation:** Conducts comparative experiments across different foundation models, parameter scales, and fine-tuning strategies to investigate the effectiveness of domain knowledge integration and reasoning data distillation in improving model performance.
 
 ---
 
